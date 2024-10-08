@@ -1,0 +1,371 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume-Reversed
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Karan Trehan}
+{Engineering manager with 12+ years of software development expertise }
+{\href{https://karntrehan.com}{karntrehan.com} | 
+\href{mailto:karntrehan@gmail.com}{karntrehan@gmail.com} | \href{tel:+918767447416}{+91-876-744-7416}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{\href{https://samagragovernance.in/}{\underline{Samagra}}}
+\descript{| Social Impact \& GovTech}
+
+\designation{Senior Engineering Manager} 
+\textbullet{}
+\location {Apr'24 - Present | Remote}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Managing the development of an education domain AI product aiming social good; working on a model for oral fluency with external government-backed stakeholders.
+\end{tightemize}
+
+\designation{Engineering Manager} 
+\textbullet{}
+\location {Jan'23 - Mar'24 | Remote}
+\begin{tightemize}
+\item Worked across domains in the govt-tech social impact space playing an important role in designing large systems which can run on limited processing power with various states.
+\item Defined and enhanced the software management process in the organization like sprints, retros, demo days, RCAs, etc. enhancing the efficiency of the team.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.gotocompany.com/en}{\underline{GoTo}}}
+\descript{| Souteast-Asian Conglomerate}
+
+\designation{Engineering Manager - Driver App} 
+\textbullet{}
+\location {May'22 - Nov'22 • Remote}
+\begin{tightemize}
+\item People management, hiring, prioritizing tasks, clarifying requirements, writing documentation, resolving blockers; coordinating with design, product, QA and backend.
+\item Worked on Kotlin Multiplatform, managed the modularisation of our Android app and implementing an in-house analytics system.
+\end{tightemize}
+
+\designation{Engineering Manager: Mobile - Gopay} 
+\textbullet{}
+\location {Mar'21 - May'22 | Remote}
+\begin{tightemize}
+\item Worked with Flutter to set up a strong base for all engineers and built multiple features; picked up on people management.
+\end{tightemize}
+
+\designation{Team Lead : Android - Gopay} 
+\textbullet{}
+\location {Jun'20 - Feb'21  | Remote}
+\begin{tightemize}
+\item Led the team in integrating an online bank in the Gojek app and unifying our interview process while moving to a manager role.
+\end{tightemize}
+
+\designation{Product Engineer : Android - Gopay} 
+\textbullet{}
+\location {Jan'20 - Jun'20 | Remote}
+\begin{tightemize}
+\item Developed a currency helper for usage across all Gojek products and Gopay social flows amongst others.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.pepperfry.com/}{\underline{Pepperfry}}}
+\descript{| E-Commerce}
+
+\designation{Senior Android Developer} 
+\textbullet{}
+\location {Jun'18 - Dec'19 • Mumbai}
+\begin{tightemize}
+\item Designed and led the Kotlin + MVVM migration of the app, led the AR experiments for the organization amongst other features.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.udacity.com/}{\underline{Udacity}}}
+\descript{| EduTech}
+
+\designation{Mentor} 
+\textbullet{}
+\location {May'17 - Dec'18 • Remote}
+\begin{tightemize}
+\item Classroom mentor for the Android Basics Nanodegree and Android Development programs.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{m.Paani}
+\descript{| Social Impact}
+
+\designation{Senior Android Developer} 
+\textbullet{}
+\location {Apr'16 - Jun'18 • Mumbai}
+\begin{tightemize}
+\item Leading the development, testing and maintenance of all the Android solutions with an offline-first development approach.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{SKCS LLP}
+\descript{| IT Services}
+
+\designation{Partner} 
+\textbullet{}
+\location {• Nov'12 - Mar'16 • Mumbai}
+
+\designation{Director: Innovative Technologies} 
+\textbullet{}
+\location {• Jan'14 - Mar'16 • Mumbai}
+
+\designation{Education Technology Developer} 
+\textbullet{}
+\location {Nov'12 - Oct'13 • Mumbai}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\section{Projects}
+%\runsubsection{Space Robotics Team}
+%\descript{| Path-Planning Lead}
+%\location{Jan 2018 – Present | Somewhere, XX}
+%\begin{tightemize}
+%\item Spearhead the development effort for the path-planning functionality of a team of three robots.
+%\item ROS provides movement servers and the planning is being implemented in Python to allow for fully-autonomous operation.
+%\end{tightemize}
+%\sectionsep
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNITY SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Service}
+
+% \begin{tabular}{rll}
+% 2013 -- 2018    & Tennessee     & St. Baldrick's Foundation\\
+% 2014 -- 2017	& Tennessee     & American Cancer Society's Hope Lodge\\
+% 2013 -- 2015    & Tennessee     & Habitat for Humanity\\
+% 2011 -- 2015    & Tennessee     & Special Olympics\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+
+% \begin{tabular}{rll}
+% 2018 -- 2018    & National      & Association of Computing Machinery (ACM)\\
+% 2017 -- 2019	& National      & Scrum Alliance Certified ScrumMaster\\
+% 2015 -- 2019    & University    & Shackouls Honors College\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \begin{tabular}{rll}
+% 2015        & 99\textsuperscript{th} percentile & National Merit Scholarship Finalist\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications}
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Mumbai University}
+\descript{Bachelor of Science - Information Technology}
+\location{- Jun'14 | Mumbai}
+\designation{Valedictorian | GPA: 6.8; A Grade}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Management}
+Team building \textbullet{} Coaching \textbullet{} Delivery \\\textbullet{}
+Experimentation \textbullet{} Thought partnership \textbullet{} Scoping \textbullet{} Sprint management 
+\sectionsep
+
+\subsection{Programming}
+Kotlin \textbullet{} Python \textbullet{} XML \textbullet{}
+Java \\\textbullet{} JavaScript \textbullet{} Dart
+\sectionsep
+
+\subsection{Technology}
+- {\bf AI}: ChatGPT assistant, LLama\\
+- {\bf Mobile}: Android Native, KMP, Flutter \\ 
+- {\bf BE}: NestJS, Django, Flask, Quart \\
+- {\bf Mobile}: Docker, Ansible \\
+- {\bf FE}: NextJS, React \\
+- {\bf Monitoring}: Prometheus, Grafana, Kong \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\subsection{Current}
+\href{https://github.com/NipunSahAIyak}{Nipun SahAIyak} \textbullet{}
+\href{https://github.com/Mission-Prerna}{Nipun Lakshya} \textbullet{}
+\href{https://github.com/Code4GovTech}{Code4GovTech} \textbullet{}
+\href{https://github.com/Konnect-Agri}{Konnect}
+\sectionsep
+
+\subsection{Past}
+\href{https://play.google.com/store/apps/details?id=com.gojek.gopay&hl=en_IN}{Gopay} \textbullet{}
+\href{https://play.google.com/store/apps/details?id=com.gojek.app&hl=en_IN}{Gojek} \textbullet{}
+\href{https://play.google.com/store/apps/details?id=com.gojek.agent&hl=en_IN}{Gojek Agent} \textbullet{}
+\href{https://play.google.com/store/apps/details?id=com.app.pepperfry&hl=en_IN}{Pepperfry} \textbullet{}
+m.Paani\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Community}
+- {\bf Contributor}: ODK \& PostHog \\
+- {\bf Super Mentor}: Code4GovTech \\
+- {\bf Speaker \& Co-organizer}: GDG MAD
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/karntrehan}{\bf karntrehan} \\
+LinkedIn://  \href{https://www.linkedin.com/in/karntrehan}{\bf karntrehan} \\
+Medium://  \href{https://medium.com/@karntrehan}{\bf karntrehan}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
